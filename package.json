@@ -1,5 +1,5 @@
 {
-  "name": "carbon-field-YOURFIELDNAME",
+  "name": "carbon-field-link",
   "version": "1.0.0",
   "scripts": {
     "dev": "webpack -w",

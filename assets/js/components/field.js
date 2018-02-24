@@ -32,7 +32,7 @@ export const LinkField = ({
 }) => {
 	return (
 		<Field field={field}>
-			<label>
+			<label className="label">
 				Label
 				<input
 					type="text"
@@ -43,7 +43,7 @@ export const LinkField = ({
 				/>
 			</label>
 	
-			<label>
+			<label className="link">
 				Link
 				<input
 					type="text"
@@ -54,7 +54,7 @@ export const LinkField = ({
 				/>
 			</label>
 
-			<label>
+			<label className="target">
 				Open in a new tab
 				<input
 					type="checkbox"

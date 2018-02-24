@@ -1,8 +1,8 @@
 {
-    "name": "htmlburger/carbon-field-link-field",
+    "name": "htmlburger/carbon-field-link",
     "version": "1.0.0",
     "description": "Carbon Fields extension, that adds a link field field type.",
-    "keywords": ["wordpress", "carbon-field", "carbon-field-link-field"],
+    "keywords": ["wordpress", "carbon-field", "carbon-field-link"],
     "homepage": "",
     "type": "library",
     "license": "GPL-2.0+",

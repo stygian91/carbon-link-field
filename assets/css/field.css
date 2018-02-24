@@ -1,0 +1,6 @@
+.carbon-link { margin-left: 15px; }
+.carbon-link input[type="text"] { margin: 0; }
+.carbon-link .label { display: inline-block; width: calc(50% - 10px); }
+.carbon-link .link { display: inline-block; width: calc(50% - 10px); margin-left: 20px; }
+.carbon-link .target { margin-top: 5px; }
+.carbon-link .target input { margin-left: 10px; }
