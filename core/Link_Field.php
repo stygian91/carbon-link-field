@@ -53,7 +53,7 @@ class Link_Field extends Field {
 		}
 
 		$value = $input[ $this->get_name() ];
-		if( isset( $value['target'] ) && $value['target'] === 'checked' ) {
+		if( isset( $value['target'] ) && ( $value['target'] === 'checked' || $value['target'] === true ) ) {
 			$target = true;
 		} else {
 			$target = false;
@@ -74,7 +74,7 @@ class Link_Field extends Field {
 	public function get_formatted_value() {
 		$value = parent::get_formatted_value();
 
-		if ( isset( $value['target'] ) && $value['target'] === 'checked' ) {
+		if ( isset( $value['target'] ) && ( $value['target'] === 'checked' || $value['target'] === true ) ) {
 			$value['target'] = true;
 		} else {
 			$value['target'] = false;
