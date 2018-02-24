@@ -12,6 +12,10 @@ import Field from 'fields/components/field';
 import withStore from 'fields/decorators/with-store';
 import withSetup from 'fields/decorators/with-setup';
 
+const labelText  = CrbLinkFieldi18n.label;
+const linkText   = CrbLinkFieldi18n.link;
+const targetText = CrbLinkFieldi18n.target;
+
 /**
  * Render a number input field.
  *
@@ -33,7 +37,7 @@ export const LinkField = ({
 	return (
 		<Field field={field}>
 			<label className="label">
-				Label
+				{labelText}
 				<input
 					type="text"
 					name={`${name}[label]`}
@@ -44,7 +48,7 @@ export const LinkField = ({
 			</label>
 	
 			<label className="link">
-				Link
+				{linkText}
 				<input
 					type="text"
 					name={`${name}[link]`}
@@ -55,7 +59,7 @@ export const LinkField = ({
 			</label>
 
 			<label className="target">
-				Open in a new tab
+				{targetText}
 				<input
 					type="checkbox"
 					name={`${name}[target]`}

@@ -23,7 +23,7 @@ class Link_Field extends Field {
 		$dir = \Carbon_Field_Link_Field\DIR . '/languages/';
 		$locale = get_locale();
 		$path = $dir . $locale . '.mo';
-		load_textdomain( 'carbon-field-link', $path );
+		load_textdomain( 'crblf', $path );
 	}
 
 	/**
@@ -35,6 +35,7 @@ class Link_Field extends Field {
 
 		# Enqueue JS
 		wp_enqueue_script( 'carbon-field-link', $root_uri . '/assets/js/bundle.js', array( 'carbon-fields-boot' ) );
+		wp_localize_script( 'carbon-field-link', 'CrbLinkFieldi18n', Language::get_strings() );
 
 		# Enqueue CSS
 		wp_enqueue_style( 'carbon-field-link', $root_uri . '/assets/css/field.css' );
