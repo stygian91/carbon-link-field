@@ -49,11 +49,11 @@ array(3) {
   ["target"] => bool(true)
 }
 ```
+If there's no value stored in the database an **empty string** will be returned instead of the array.
 
 The link and label values are self-explanatory. The last value - target, signifies if the link should be opened in a new tab or not (`target="_blank/_self"`).
 
-If there's no value stored in the database an empty string will be returned instead of the array.
-
+## Helpers
 The following helper function has been added to print a link that follows the above data structure:
 
 `crb_render_link( $link, $args )`
