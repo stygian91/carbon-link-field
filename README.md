@@ -4,7 +4,7 @@
 2. Call `composer require htmlburger/carbon-fields`
 3. Edit the `functions.php` file
 4. Add this code to the top of functions.php:
-```
+```php
 use Carbon_Fields\Container;
 use Carbon_Fields\Field;
 
